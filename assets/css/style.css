@@ -1,5 +1,6 @@
 :root {
     --light: #ffffff;
+    --bgcolor: #cc7a7a;
     
     }
     
@@ -21,25 +22,25 @@
     header nav{
         padding: 20px;
         Width: 100%;
-        background-color: #cc7a7a;
+        background-color: var(--bgcolor);
     }
     
     header nav ul {
         margin: 10px;
         padding: 10px;
-        background-color: #cc7a7a;
+        background-color: var(--bgcolor);
     }
     
     header nav ul li{
         display: inline;
         float: right;
-        background-color: #cc7a7a;
+        background-color: var(--bgcolor);
     }
     
     header nav ul a {
         padding: 15px;
         margin: 8px;
-        background-color: #cc7a7a;
+        background-color: var(--bgcolor);
         justify-content: space-between;
         text-decoration: none;
         color: black;
@@ -50,18 +51,19 @@
         display: block;
         margin: 20px 10px;
     }
-    #profile{
-        width: 10px;
+    
+    #profile {
+        width: 300px;
     }
+
     #profile img {
         width: 300px;
         margin: 5px;
         padding: 10px;
+        border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 20px;
-
     }
     
     h2 {
@@ -81,8 +83,10 @@
     }
     
     .projects article {
-        display: block;
-        /* flex-wrap: wrap; */
+        padding: 10px;
+        margin: 5px;
+        display: flex;
+        flex-wrap: wrap;
     }
     
     #project1 {
@@ -90,13 +94,13 @@
         width: 400px;
         margin: 20px;
         padding: 10px;
+        transition: height .1s;
     }
     
     #project1 p {
         width: 50%;
         background-color: rgba(17, 16, 17, 0.3);
         color: var(--light);
-    
     }
     
     #project2 {
@@ -155,7 +159,29 @@
         color:var(--light);
     }
     
+    #contact ul li {
+        display: block;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+    }
+
    header nav ul li a:hover {
+        font-style: italic;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    #project1:hover {
+        height: 300px
+    }
+
+    #contact ul li a:hover{
         font-style: italic;
         cursor: pointer;
         text-decoration: underline;
