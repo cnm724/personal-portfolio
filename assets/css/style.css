@@ -27,13 +27,11 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    float: right;
 }
 
 header nav ul a {
     padding: 15px;
     margin: 8px;
-    justify-content: space-between;
     text-decoration: none;
     color: black;
 }
